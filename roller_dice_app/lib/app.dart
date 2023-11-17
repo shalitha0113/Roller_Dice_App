@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roller_dice_app/gradient_container.dart';
 
 class RollerDiceApp extends StatelessWidget {
   const RollerDiceApp({super.key});
@@ -8,16 +9,17 @@ class RollerDiceApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blueGrey,
-          title: const Text('Roller Dice App 1'),
+          title: const Text('Roller Dice App '),
         ),
-        body: Container(
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(colors: [
+        body: const GradientContainer(colors: [
             Color.fromARGB(255, 202, 127, 127),
             Color.fromARGB(198, 236, 11, 11)
-          ])),
-        ),
+          ]),
       ),
     );
   }
 }
+
+
+
+
