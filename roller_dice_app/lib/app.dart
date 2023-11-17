@@ -10,6 +10,8 @@ class RollerDiceApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.blueGrey,
           title: const Text('Roller Dice App '),
+          titleTextStyle: const TextStyle(fontSize: 28),
+          centerTitle: true,
         ),
         body: const GradientContainer(colors: [
             Color.fromARGB(255, 202, 127, 127),
